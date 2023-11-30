@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        scale: 1.1;
+    }
+}
+
+.container {
+    background-image: url('2.png');
+    max-width: 2000px;
+    height: auto; /* Change height to auto for responsiveness */
+    min-height: 100vh; /* Ensure a minimum height of the viewport */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading h1 {
+    padding: 0px 20px 0px 20px;
+    opacity: 80%;
+    text-shadow: rgba(0, 0, 0, 0.87) 0px 0px 126px;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    transition-delay: 0ms;
+    opacity: 100%;
+    color: white;
+    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
+    stroke: white;
+    stroke-width: 2px;
+    cursor: pointer;
+    animation: fadeInUp 1s forwards;
+}
+
+
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 10vh;
+    animation: fadeInUp 1s forwards;
+}
+h4 {
+    opacity: 40%;
+    position: abs;
+    bottom: 30px;
+    margin-bottom: 30px; /* Add margin for better spacing */
+}
+
+h1:hover {
+    transition-delay: 0ms;
+    opacity: 100%;
+    color:rgba(0, 255, 234, 0.9);
+    text-shadow: rgba(256, 256, 256, 0.9) 0px 0px 27px;
+    stroke: white;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+h3:hover {
+    transition-duration: 1s;
+    scale: 1.2;
+    color: white;
+    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+}
+
+.option button {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: transparent;
+    padding: 0px 20px 0px 20px;
+    color: white;
+}
+
+.option button:hover {
+    transition-duration: 1s;
+    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
+    border-color: white;
+    border-style: solid;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 255, 234, 0.1);
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+main {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+* {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        justify-content: space-between;
+         /* Adjust padding for smaller screens */
+    }
+    .heading{
+        align-items: center;
+        animation: fadeInUp 1s forwards;
+    }
+    .heading h1 {
+        font-size: 0.8rem;
+        transition-delay: 0ms;
+    opacity: 100%;
+    color: white;
+    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
+    stroke: white;
+    stroke-width: 2px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+    }
+
+    .choice {
+        width: 90%;
+        opacity: 0; /* Set initial opacity to 0 for animation */
+    transform: translateY(20px); /* Move the element down initially */
+    animation: fadeInUp 1s forwards;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+    }
+    .title h1{
+        font-size: 1.8rem;
+    }
+    #title{
+        font-size: 4rem;
+        animation: fadeInUp 2s forwards;
+    }
+}
