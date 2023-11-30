@@ -1,10 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: poppins,Arial, Helvetica, sans-serif;
 }
 
+body {
+    user-select: none;
+}
 
+.option a{
+    text-decoration: none;
+    color: inherit;
+}
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -144,7 +151,7 @@ h4{
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 10px;
+        /* padding: 10px; */
         justify-content: space-between;
          /* Adjust padding for smaller screens */
     }
@@ -170,10 +177,13 @@ h4{
     .choice {
         width: 90%;
         opacity: 0; /* Set initial opacity to 0 for animation */
-    transform: translateY(20px); /* Move the element down initially */
+    transform: translateY(20px); 
+    /* Move the element down initially */
     animation: fadeInUp 1s forwards;
     }
-
+    .choice button{
+        border: solid rgba(0, 255, 234, 0.9);
+    }
     h4 {
         margin-bottom: 20px;
     }
@@ -183,5 +193,6 @@ h4{
     #title{
         font-size: 4rem;
         animation: fadeInUp 2s forwards;
+        
     }
 }
