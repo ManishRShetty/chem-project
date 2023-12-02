@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -25,10 +26,11 @@ body {
 }
 
 .container {
-    background-image: url('2.png');
+    background-image: url('2.jpg');
     max-width: 2000px;
     height: auto; /* Change height to auto for responsiveness */
-    min-height: 100vh; /* Ensure a minimum height of the viewport */
+    min-height: 100vh;
+    height: 95vh; /* Ensure a minimum height of the viewport */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -41,33 +43,50 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .heading h1 {
-    padding: 0px 20px 0px 20px;
-    opacity: 80%;
-    text-shadow: rgba(0, 0, 0, 0.87) 0px 0px 126px;
-    margin-bottom: 30px;
-    font-size: 2.2rem;
-    transition-delay: 0ms;
-    opacity: 100%;
-    color: white;
-    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
-    stroke: white;
-    stroke-width: 2px;
+    width: 825.53px;
+    height: 107.875px;
+    transform: rotate(-0.254deg);
+    flex-shrink: 0;
     cursor: pointer;
     animation: fadeInUp 1s forwards;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 12px 7.2px #78006E;
+    scale: 1;
+    
 }
 
+.mainhead{
 
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-shadow: 0px 12px 7.2px #78006E;
+    position: relative;
+    bottom: 20px;
+    
+}
 
 .choice {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    height: 10vh;
+    width: 90%;
+    height: 25vh;
     animation: fadeInUp 1s forwards;
+    position: relative;
+    top: 55px;
 }
 h4 {
     opacity: 40%;
@@ -79,18 +98,18 @@ h4 {
 h1:hover {
     transition-delay: 0ms;
     opacity: 100%;
-    color:rgba(0, 255, 234, 0.9);
-    text-shadow: rgba(256, 256, 256, 0.9) 0px 0px 27px;
-    stroke: white;
-    stroke-width: 2px;
+    color:black;
     cursor: pointer;
+    transition-duration: 1s;
+    scale: 1.2;
+    color: white;
 }
 
 h3:hover {
     transition-duration: 1s;
     scale: 1.2;
     color: white;
-    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
+    text-shadow: 0px 2px 7.2px #78006E;
 }
 
 .option {
@@ -103,11 +122,16 @@ h3:hover {
 
 .option button {
     width: 100%;
-    height: 100%;
+    height: 60%;
     border-radius: 40px;
     background-color: transparent;
     padding: 0px 20px 0px 20px;
     color: white;
+    
+border-radius: 63px;
+border: 5px solid #FFF;
+background: rgba(217, 217, 217, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .option button:hover {
@@ -116,8 +140,8 @@ h3:hover {
     border-color: white;
     border-style: solid;
     font-size: 15px;
-    color: white;
-    background-color: rgba(0, 255, 234, 0.1);
+    color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 html {
@@ -134,7 +158,7 @@ main {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -151,49 +175,19 @@ h4{
 
 @media screen and (max-width: 768px) {
     .container {
-        /* padding: 10px; */
         justify-content: space-between;
-         /* Adjust padding for smaller screens */
+        background-image: url('3.jpg');
     }
-    .heading{
-        align-items: center;
-        animation: fadeInUp 1s forwards;
-    }
-    .heading h1 {
-        font-size: 0.8rem;
-        transition-delay: 0ms;
-    opacity: 100%;
-    color: white;
-    text-shadow: rgba(0, 255, 234, 0.9) 0px 0px 27px;
-    stroke: white;
-    stroke-width: 2px;
-    cursor: pointer;
-    position: relative;
-    top: 40px;
-    margin: 0;
-    padding: 0px 10px 0px 10px;
+
+    .mainhead {
+        font-size: 3rem;
     }
 
     .choice {
-        width: 90%;
-        opacity: 0; /* Set initial opacity to 0 for animation */
-    transform: translateY(20px); 
-    /* Move the element down initially */
-    animation: fadeInUp 1s forwards;
+        top: 10px;
     }
-    .choice button{
-        border: solid rgba(0, 255, 234, 0.9);
-    }
+
     h4 {
-        position: relative;
-        bottom: 80px;
-    }
-    .title h1{
-        font-size: 1.8rem;
-    }
-    #title{
-        font-size: 4rem;
-        animation: fadeInUp 2s forwards;
-        
+        bottom: 10px;
     }
 }
