@@ -74,7 +74,13 @@ text-shadow: 4px 0px 5px rgba(222, 0, 215, 0.58),3px 3px 0px rgba(130, 27, 103, 
     
 }
 
-
+.result{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
 .inp::-webkit-outer-spin-button,
 .inp::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -126,6 +132,7 @@ h2{
 @media only screen and (max-width: 768px) {
     .container{
         background-image: url('3.jpg');
+        background-size: cover;
     }
     .inp,
     .button,h1,h2,h3 {
@@ -134,24 +141,27 @@ h2{
         text-align: center;
     }
 
-h1,h2,h3 {
+h1,h3 {
     display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 55px;
+        margin-top: 35px;
+        
         
     }
-h2,h3{
-    font-size: 100%;
+h3{
+    font-size: 95%;
 }
-
-h1{
-    font-size: 37px;
-}
-
 h2{
-    font-size: 25px;
+    font-size: 15px;
+    padding: 0px 5px 0px 5px;
+}
+h2 span{
+    padding: 0px 10px 5px 10px;
+}
+h1{
+    font-size: 20px;
 }
     h1:hover,h2:hover,h3:hover{
         scale: 0.9;
@@ -160,9 +170,5 @@ h2{
     .inp{
         font-size: 4rem;
         font-weight: bolder;
-    }
-    .button{
-        position: relative;
-        top: 40px;
     }
 }
